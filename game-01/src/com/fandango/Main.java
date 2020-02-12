@@ -1,6 +1,8 @@
 package com.fandango;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
 
@@ -11,22 +13,17 @@ public class Main {
 
 
     public static int[] pairsThatSum(int[] list, int targetSum) {
-        Arrays.sort(list);
+        Map<Integer, Integer> map = new HashMap<>();
 
-        int low = 0;
-        int high = list.length - 1;
-        int[] result = new int[2];
+        for (int i = 0; i < list.length; i++) {
+            int complement = targetSum - list[i];
+            if (map.containsKey(complement)) {
+                return new int[]{list[map.get(complement)], list[i]};
+            }
 
-        while (low < high) {
-            if (list[low] + list[high] == targetSum)
-                return new int[]{list[low], list[high]};
-
-            if (list[low] + list[high] < targetSum)
-                low++;
-
-            else high--;
+            map.put(list[i], i);
         }
 
-        return result;
+        return new int[]{};
     }
 }
