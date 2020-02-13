@@ -20,4 +20,4 @@ Be sure to answer this question by outlining the concepts used to tackle the pro
 
 ## Solution
 
-La solución está en este link: (https://docs.google.com/document/d/15pRN2CmtS4GV7iMhtb92JlZZ6_LZPRKcU7nO3I3tsJY/edit?usp=sharing)
+La solución está en este [link] (https://docs.google.com/document/d/15pRN2CmtS4GV7iMhtb92JlZZ6_LZPRKcU7nO3I3tsJY/edit?usp=sharing)
